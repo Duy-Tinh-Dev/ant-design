@@ -1,5 +1,5 @@
-function SideBar() {
-  return <h1>This is sideBar</h1>;
+function SideBarTest() {
+  return <h1>This is side</h1>;
 }
 
-export default SideBar;
+export default SideBarTest;

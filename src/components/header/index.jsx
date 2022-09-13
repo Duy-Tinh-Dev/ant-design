@@ -1,5 +1,5 @@
-function Header() {
-  return <h1>This is Header</h1>;
+function HeaderTest() {
+  return <h1>This is HeaderTest</h1>;
 }
 
-export default Header;
+export default HeaderTest;
