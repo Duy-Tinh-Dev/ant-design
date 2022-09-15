@@ -20,3 +20,20 @@ code {
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }
+
+:root {
+  --color-button: rgb(56 186 116);
+  --color-background: #f0f2f5;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+i {
+  color: black;
+}
+
+p {
+  color: black;
+}
