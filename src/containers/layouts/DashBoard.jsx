@@ -3,13 +3,11 @@ import { Layout, Col, Space, Divider, Typography } from "antd";
 import "./DashBoard.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import pageRoutes from "../../config/Router";
-import "./style.css";
-// test
 
 import HeaderTest from "../../components/header";
 import SideBarTest from "../../components/sideBar";
 import Title from "antd/lib/skeleton/Title";
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Sider } = Layout;
 
 const Dashboard = () => {
   const [collapsed, setCollapsed] = useState(true);

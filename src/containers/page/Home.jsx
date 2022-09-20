@@ -3,6 +3,9 @@ import HistoryCall from "../../components/historyCall";
 import CustomerCare from "../../components/customerCare";
 import MissCall from "../../components/missCall";
 import ChartContract from "../../components/chartContract";
+import PotentialCustomer from "../../components/PotentialCustomer";
+import SignedContract from "../../components/SignedContract";
+
 function Home() {
   return (
     <>
@@ -20,10 +23,14 @@ function Home() {
         </Col>
       </Row>
       <Row style={{ marginBottom: "16px" }}>
-        <Col span={24}>content 4</Col>
+        <Col span={24}>
+          <PotentialCustomer />
+        </Col>
       </Row>
       <Row gutter="16">
-        <Col span={12}>content 5</Col>
+        <Col span={12}>
+          <SignedContract />
+        </Col>
         <Col span={12}>
           <ChartContract />
         </Col>

@@ -78,7 +78,7 @@ const ChartContract = () => {
   };
   return (
     <div className="chartContract_wrap">
-      <Title level={4} style={{ marginBottom: "40px" }}>
+      <Title level={4} style={{ marginBottom: "88px" }}>
         Tỷ lệ hợp đồng/cuộc hẹn
       </Title>
       <Pie {...config} />
