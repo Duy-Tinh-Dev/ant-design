@@ -1,158 +1,121 @@
-.sb_sideBar_header{
-    background-image: linear-gradient(180deg,white,white,white, rgb(250 250 250));
+.sb_sideBar_header {
+  background-image: linear-gradient(
+    180deg,
+    white,
+    white,
+    white,
+    rgb(250 250 250)
+  );
 }
 
 .sb_sideBar_header .ant-space-item span {
-    display: none;
+  display: none;
 }
 
-/*----------------------scroll--------------------------*/
-
-.sb_content::-webkit-scrollbar {
-    /* margin-top: 20px; */
-    width: 10px;           /* Chiều rộng vùng chứa scrollbar */
-    /* height: 10px; */
-}
-
-.sb_content::-webkit-scrollbar-track {
-    background: white;        /* Màu nền ngoài của thanh scrollbar */
-}
-
-.sb_content::-webkit-scrollbar-track-piece:start {
-    margin-top: 20px; 
-}
-
-.sb_content::-webkit-scrollbar-thumb {
-    /* height: 20px; */
-    background-color: rgb(173 173 173);    /* Màu của thanh cuộn (scroll thumb) */
-    border-radius: 5px;       /* Bo góc scroll thumb */
-    border: 2px solid #ccc;  /* Không hỗ trợ padding, margin, transition nên dùng viền cùng màu nên để padding scroll thumb */
-}
-
-.sb_content::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(173 173 173); /* Hiệu ứng di chuột đổi màu*/
-}
-
-.sb_content { /*cho Firefox*/
-    /* height: 10px; */
-    scrollbar-width: thin;          /* "auto" hoặc "thin" */
-    scrollbar-color: rgb(173 173 173) #ccc;   /* scroll thumb and track */
+.sb_content {
+  /*cho Firefox*/
+  /* height: 10px; */
+  scrollbar-width: thin; /* "auto" hoặc "thin" */
+  scrollbar-color: rgb(173 173 173) #ccc; /* scroll thumb and track */
 }
 
 /*==============================================================*/
 
-
-
 /*----------------------sb_header--------------------------*/
 
-
-.sb_sideBar_header{
-    display: flex;
-    justify-content: space-between;
-    /* background-color: white; */
-    padding : 20px 3%;
-    background-color: white;
-    border-radius: 20px 20px 0 0;
+.sb_sideBar_header {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: white; */
+  padding: 20px 3%;
+  background-color: white;
+  border-radius: 20px 20px 0 0;
 }
-
 
 /*---------filter-----------*/
 
-.sb_filter .ant-checkbox-group-item{
-    padding : 10px 0;
+.sb_filter .ant-checkbox-group-item {
+  padding: 10px 0;
 }
 
-.sb_filter .ant-checkbox-checked .ant-checkbox-inner{
-    color: white;
-    background-color: var(--color-button);
+.sb_filter .ant-checkbox-checked .ant-checkbox-inner {
+  color: white;
+  background-color: var(--color-button);
 }
 
-.sb_sideBar_header .ant-slider-track{
-    background-color: var(--color-button);
+.sb_sideBar_header .ant-slider-track {
+  background-color: var(--color-button);
 }
 
-.sb_sideBar_header .ant-slider:hover .ant-slider-track{
-    background-color: var(--color-button);
+.sb_sideBar_header .ant-slider:hover .ant-slider-track {
+  background-color: var(--color-button);
 }
-
 
 /* ----------------------  sb_cal_week --------------------------------------*/
 
-.sb_cal_week{
-    display: flex;;
+.sb_cal_week {
+  display: flex;
 
-    padding: 0 20px;
-
+  padding: 0 20px;
 }
 
-.sb_cal_week .ant-segmented-item{
-    padding : 0 20px;
-    /* background: #fff; */
+.sb_cal_week .ant-segmented-item {
+  padding: 0 20px;
+  /* background: #fff; */
 }
 
-.sb_cal_week .ant-segmented-group{
-    display: flex;
-    justify-content: space-between;
-    
+.sb_cal_week .ant-segmented-group {
+  display: flex;
+  justify-content: space-between;
 }
 
-.sb_cal_week .ant-segmented-item-selected{
-    /* padding: 5px 10px; */
-    border-radius: 20px;
-    color: white;
-    background-color: var(--color-button);
-    /* background-color: aqua; */
+.sb_cal_week .ant-segmented-item-selected {
+  /* padding: 5px 10px; */
+  border-radius: 20px;
+  color: white;
+  background-color: var(--color-button);
+  /* background-color: aqua; */
 }
 
 .sb_cal_week .ant-segmented-thumb {
-    background-color: var(--color-button);
-    border-radius: 20px;
+  background-color: var(--color-button);
+  border-radius: 20px;
 }
-
-
-
 
 /*--------------------------------- Content ----------------------------------------*/
 
-.sb_content{
-    padding : 10px 3%;
-    overflow-y: scroll;
+.sb_content {
+  padding: 10px 3%;
+  overflow-y: scroll;
 }
 
-.sb_intro{
-    display: flex;
-    margin : 10px 0;
-    justify-content: space-between;
-    border-bottom: 2px dotted rgb(173 173 173);
+.sb_intro {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  border-bottom: 2px dotted rgb(173 173 173);
 }
 
 .sb_intro i {
-    color: rgb(173 173 173);
+  color: rgb(173 173 173);
 }
 
 .sb_i_company {
-    color: rgb(249 225 143) !important;
+  color: rgb(249 225 143) !important;
 }
 
-.sb_intro_mag{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin : 10px 0;
+.sb_intro_mag {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 10px 0;
 }
 
-.sb_intro_mag i{
-    margin : 0 10px 0 0;
-    color : rgb(173 173 173);
+.sb_intro_mag i {
+  margin: 0 10px 0 0;
+  color: rgb(173 173 173);
 }
 
-.ant-popover-inner{
-    border-radius: 20px;
+.ant-popover-inner {
+  border-radius: 20px;
 }
-
-
-
-
-
-
-

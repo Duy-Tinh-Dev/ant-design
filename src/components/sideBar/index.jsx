@@ -134,7 +134,6 @@ function SideBarTest() {
   function handle_scroll() {
     let sb_content = document.querySelector(".sb_content");
     let sb_cal_row = document.querySelector(".sb_cal_row");
-
     Object.assign(document.querySelector(".sb_content").style, {
       maxHeight: `${(sb_cal_row.offsetHeight + 40) * 5}px`,
     });

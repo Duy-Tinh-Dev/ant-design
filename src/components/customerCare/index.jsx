@@ -5,6 +5,7 @@ import {
   UserOutlined,
   PhoneOutlined,
   CheckSquareOutlined,
+  StepForwardOutlined,
 } from "@ant-design/icons";
 import {
   Dropdown,
@@ -19,6 +20,7 @@ import {
   Button,
   Typography,
   List,
+  Badge,
 } from "antd";
 import "./customerCare.css";
 function CustomerCare() {
@@ -89,21 +91,12 @@ function CustomerCare() {
           />
           Khách hàng cần chăm sóc
         </Title>
-        <Button
-          style={{
-            color: "#343a40",
-            backgroundColor: "#ced4da",
-            borderRadius: "10px",
-          }}
-        >
-          Nhắc phí
-        </Button>
-      </div>
+       </div>
       <div className="customerCare_content">
         {contentDropDown && (
           <List
             pagination={{
-              pageSize: 5,
+              pageSize: 8,
               className: "pagination",
               total: 200,
               showTotal: (total) => `1-20 of ${total}`,
@@ -114,7 +107,11 @@ function CustomerCare() {
             dataSource={data}
             renderItem={(item) => (
               <List.Item>
-                <List.Item.Meta title={item.name} description={item.birthDay} />
+                <List.Item.Meta
+                  avatar={<Badge status="success" />}
+                  title={item.name}
+                  description={item.birthDay}
+                />
                 <Button className="button">CSKH</Button>
               </List.Item>
             )}
