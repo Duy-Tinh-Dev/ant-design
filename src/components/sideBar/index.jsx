@@ -269,22 +269,7 @@ function SideBarTest() {
   function Cpn_sb_cal_week() {
     return (
       <div className="sb_cal_week">
-        {/* <Row style={{
-          backgroundColor: 'var(--color-background)',
-          display : 'flex', 
-          justifyContent : 'space-around' ,
-          margin: '0 20px',
-          padding: '10px',
-          borderRadius : '10px',
-        }}>
-          {
-            data_cal_week.map((element) => {
-              return(
-                <Link style={{color: 'black'}} to={""}>{element.name}</Link>
-              ) 
-            })
-          }
-        </Row> */}
+       
         <Segmented
           style={{ width: "100%", padding: "10px", borderRadius: "20px" }}
           options={["Thứ 2", "Thứ3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "CN"]}

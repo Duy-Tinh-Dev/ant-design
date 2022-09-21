@@ -78,7 +78,7 @@ export default function SignedContract() {
                 </div>
             </div>
             <div className="ct_sc_statistic">
-                <Column {...config} />
+                <Column style={{margin : '10px 0 20px 0',height : '350px'}} {...config} />
             </div>
         </div>
     )
