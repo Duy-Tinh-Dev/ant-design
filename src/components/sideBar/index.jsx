@@ -269,7 +269,6 @@ function SideBarTest() {
   function Cpn_sb_cal_week() {
     return (
       <div className="sb_cal_week">
-       
         <Segmented
           style={{ width: "100%", padding: "10px", borderRadius: "20px" }}
           options={["Thứ 2", "Thứ3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "CN"]}
