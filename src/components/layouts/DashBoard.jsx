@@ -20,14 +20,7 @@ const Dashboard = () => {
     <Layout>
       {/* header */}
       <Router>
-        <Header
-          style={{
-            margin: "8vh 0 0 0",
-            height: "auto",
-            background: "#fff",
-            padding: 0,
-          }}
-        >
+        <Header className="header">
           <HeaderTest />
         </Header>
         <Title level={4} style={{ margin: "10px 40px 16px" }}>

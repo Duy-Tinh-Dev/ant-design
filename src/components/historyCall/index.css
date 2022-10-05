@@ -68,3 +68,27 @@
 .historyCall_content .checkBox {
   color: #37b170 !important;
 }
+.phone-icon {
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #37b170;
+  color: white;
+}
+.check-box {
+  font-size: 32px;
+  padding: 10px;
+  color: #ccc;
+}
+.historyCall_header-icon {
+  font-size: 16px;
+  color: #8c8c8c;
+}
+.historyCall_header-title {
+  margin: 0 16px;
+}
+.btn-dropdown {
+  border-radius: 8px;
+  background-color: #37b170;
+  font-weight: 600;
+}

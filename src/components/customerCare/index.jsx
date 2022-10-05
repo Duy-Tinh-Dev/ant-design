@@ -1,13 +1,6 @@
 import { useState } from "react";
-import {
-  CaretDownOutlined,
-} from "@ant-design/icons";
-import {
-  Button,
-  Typography,
-  List,
-  Badge,
-} from "antd";
+import { CaretDownOutlined } from "@ant-design/icons";
+import { Button, Typography, List, Badge } from "antd";
 import "./index.css";
 function CustomerCare() {
   const { Title } = Typography;
@@ -70,14 +63,14 @@ function CustomerCare() {
   return (
     <div className="customerCare_wrap">
       <div className="customerCare_header">
-        <Title level={4} style={{ margin: "0px 16px" }} className="no-select">
+        <Title level={4} className="customerCare_header-title">
           <CaretDownOutlined
-            style={{ fontSize: "16px", color: "#8c8c8c", marginRight: "20px" }}
+            className="customerCare_header-icon"
             onClick={handleToggleDropDown}
           />
           Khách hàng cần chăm sóc
         </Title>
-       </div>
+      </div>
       <div className="customerCare_content">
         {contentDropDown && (
           <List

@@ -1,0 +1,10 @@
+.header_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.link {
+  color: black;
+}
+.link i {
+  margin: 0 20px;
+}

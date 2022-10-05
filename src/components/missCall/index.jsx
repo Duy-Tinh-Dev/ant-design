@@ -1,14 +1,6 @@
 import { useState } from "react";
-import {
-  CaretDownOutlined,
-  ClockCircleOutlined,
-} from "@ant-design/icons";
-import {
-  Button,
-  Typography,
-  List,
-  Badge,
-} from "antd";
+import { CaretDownOutlined, ClockCircleOutlined } from "@ant-design/icons";
+import { Button, Typography, List, Badge } from "antd";
 import "./index.css";
 function MissCall() {
   const { Title } = Typography;
@@ -16,7 +8,7 @@ function MissCall() {
   const [checkBox, isCheckBox] = useState(false);
   const data = [
     {
-      name: "Jenny Wilson",              
+      name: "Jenny Wilson",
       title: "Tư vấn hợp đồng",
       time: "08:15-08:30",
       date: "12/06/2022",
@@ -89,9 +81,9 @@ function MissCall() {
   return (
     <div className="missCall_wrap">
       <div className="missCall_header">
-        <Title level={4} style={{ margin: "0px 16px" }} className="no-select">
+        <Title level={4} className="no-select missCall_header-title">
           <CaretDownOutlined
-            style={{ fontSize: "16px", color: "#8c8c8c", marginRight: "20px" }}
+            className="missCall_header-dropdown"
             onClick={handleToggleDropDown}
           />
           Cuộc hẹn bị lỡ

@@ -2,7 +2,7 @@ import { Row } from "antd";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from "react-router-dom";
-
+import "./index.css";
 const datas = [
   {
     title: "Dashboard",
@@ -36,12 +36,12 @@ const datas = [
 
 function HeaderTest() {
   return (
-    <Row style={{ display: "flex", justifyContent: "space-around" }}>
+    <Row className="header_wrapper">
       {datas.map((data) => {
         return (
           <>
-            <Link style={{ color: "black" }} to="/">
-              <i className={data.icon} style={{ margin: "0 20px" }}></i>
+            <Link className="link" to="/">
+              <i className={data.icon}></i>
               {data.title}
             </Link>
           </>

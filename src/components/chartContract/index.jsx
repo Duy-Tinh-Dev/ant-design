@@ -44,7 +44,6 @@ const ChartContract = () => {
 
       content: {
         customHtml: (container, view, datum, data) => {
-          const { width } = container.getBoundingClientRect();
           const value = `${
             datum ? datum.value : data.reduce((r, d) => r + d.value, 0)
           }`;

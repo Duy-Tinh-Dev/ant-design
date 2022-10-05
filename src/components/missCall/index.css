@@ -34,3 +34,11 @@
 .missCall_time .ant-list-item-meta-avatar {
   margin-right: 8px;
 }
+.missCall_header-title {
+  margin: 0px 16px;
+}
+.missCall_header-dropdown {
+  font-size: 16px;
+  color: #8c8c8c;
+  margin-right: 20px;
+}

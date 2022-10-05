@@ -1,10 +1,15 @@
-
+.header {
+  margin: 8vh 0 0 0;
+  height: auto;
+  background-color: #fff;
+  padding: 0;
+}
 
 .sider {
-    background-color: #fafafa;
-    border-radius: 20px;
-    /* padding: 3%; */
-    width: unset !important;
-    max-width: unset !important;
-    /* height: 500px; */
+  background-color: #fafafa;
+  border-radius: 20px;
+  /* padding: 3%; */
+  width: unset !important;
+  max-width: unset !important;
+  /* height: 500px; */
 }
