@@ -1,6 +1,5 @@
-import { Icon, Row, Col, List } from "antd";
+import { Row } from "antd";
 
-import Title from "antd/lib/skeleton/Title";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Link } from "react-router-dom";
 

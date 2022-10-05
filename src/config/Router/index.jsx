@@ -1,4 +1,4 @@
-import Home from "../../containers/page/Home";
+import Home from "../../page/Home";
 
 const pageRoutes = () => {
   return [

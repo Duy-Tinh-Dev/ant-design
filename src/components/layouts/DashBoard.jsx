@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { Layout, Col, Space, Divider, Typography } from "antd";
+import { Layout, Col, Typography } from "antd";
 import "./DashBoard.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import pageRoutes from "../../config/Router";
 
-import HeaderTest from "../../components/header";
-import SideBarTest from "../../components/sideBar";
-import Title from "antd/lib/skeleton/Title";
+import HeaderTest from "../Header";
+import SideBarTest from "../SideBar";
 const { Header, Content, Sider } = Layout;
 
 const Dashboard = () => {

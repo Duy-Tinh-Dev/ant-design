@@ -1,8 +1,6 @@
-import ReactDOM from "react-dom";
-import { RingProgress } from "@ant-design/plots";
-import { Divider, Typography } from "antd";
-import "./chartContract.css";
-import React, { useState, useEffect } from "react";
+import { Typography } from "antd";
+import "./index.css";
+import React from "react";
 import { Pie } from "@ant-design/plots";
 const ChartContract = () => {
   const { Title } = Typography;

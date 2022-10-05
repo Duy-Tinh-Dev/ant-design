@@ -1,21 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Dropdown, Layout, Space } from "antd";
-import { Row, Col, Divider } from "antd";
-import "./sidebar.css";
+import { Row} from "antd";
+import "./index.css";
 import {
   Checkbox,
-  Button,
   Slider,
-  Switch,
-  Menu,
-  Input,
   Popover,
   Segmented,
 } from "antd";
-import { Link } from "react-router-dom";
-import { DownOutlined } from "@ant-design/icons";
-
-const { Header, Content, Footer, Sider } = Layout;
 
 function SideBarTest() {
   const [val_scs, setVal_scs] = useState(0);

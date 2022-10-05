@@ -10,16 +10,11 @@ import {
   Menu,
   Space,
   Typography,
-  message,
   Table,
-  Pagination,
-  Row,
-  Col,
-  Checkbox,
 } from "antd";
 import { Button } from "antd";
 import { useState } from "react";
-import "./historyCall.css";
+import "./index.css";
 function HistoryCall() {
   const onChange = (checkedValues) => {
     console.log("checked = ", checkedValues);
@@ -35,8 +30,76 @@ function HistoryCall() {
     setContentDropDown(!contentDropDown);
   };
   const { Title } = Typography;
-  // const handleMenuClick = (e) => {
-  // };
+  
+  const dataHistory = [{
+    id: "1",
+      name: "John Brown",
+      type: "cá nhân",
+      tel: "0571-22098909",
+      lastCall: "12/8/2022",
+      nextCall: "17/8/2022",
+      note: "Đã làm khảo sát",
+  },{
+    id: "2",
+      name: "John Brown",
+      type: "cá nhân",
+      tel: "0571-22098909",
+      lastCall: "12/8/2022",
+      nextCall: "17/8/2022",
+      note: "Đã làm khảo sát",
+  },
+  {
+    id: "3",
+      name: "John Brown",
+      type: "cá nhân",
+      tel: "0571-22098909",
+      lastCall: "12/8/2022",
+      nextCall: "17/8/2022",
+      note: "Đã làm khảo sát",
+  },
+  {
+    id: "4",
+      name: "John Brown",
+      type: "cá nhân",
+      tel: "0571-22098909",
+      lastCall: "12/8/2022",
+      nextCall: "17/8/2022",
+      note: "Đã làm khảo sát",
+  },
+  {
+    id: "5",
+      name: "John Brown",
+      type: "cá nhân",
+      tel: "0571-22098909",
+      lastCall: "12/8/2022",
+      nextCall: "17/8/2022",
+      note: "Đã làm khảo sát",
+  },{
+    id: "6",
+      name: "John Brown",
+      type: "cá nhân",
+      tel: "0571-22098909",
+      lastCall: "12/8/2022",
+      nextCall: "17/8/2022",
+      note: "Đã làm khảo sát",
+  },{
+    id: "7",
+      name: "John Brown",
+      type: "cá nhân",
+      tel: "0571-22098909",
+      lastCall: "12/8/2022",
+      nextCall: "17/8/2022",
+      note: "Đã làm khảo sát",
+  },{
+    id: "8",
+      name: "John Brown",
+      type: "cá nhân",
+      tel: "0571-22098909",
+      lastCall: "12/8/2022",
+      nextCall: "17/8/2022",
+      note: "Đã làm khảo sát",
+  }]
+
   const menu = (
     <Menu
       // onClick={handleMenuClick}
@@ -89,264 +152,40 @@ function HistoryCall() {
       dataIndex: "active",
     },
   ];
-  const data = [
-    {
-      key: "1",
-      name: <div className="first-col col1">John Brown"</div>,
-      type: "cá nhân",
-      tel: "0571-22098909",
-      lastCall: "12/8/2022",
-      nextCall: "17/8/2022",
-      note: "Đã làm khảo sát",
-      active: [
-        <Space size="middle">
-          <PhoneOutlined
-            style={{
-              fontSize: "12px",
-              padding: "10px",
-              borderRadius: "50%",
-              backgroundColor: "#37B170",
-              color: "white",
-            }}
-          />
-          <CheckSquareOutlined
-            style={{
-              fontSize: "32px",
-              padding: "10px",
-              color: "#ccc",
-            }}
-            id="row-checkbox-1"
-            className=""
-            onClick={() => handleToggleCheckBox(1)}
-          ></CheckSquareOutlined>
-        </Space>,
-      ],
-    },
-    {
-      key: "2",
-      name: <div className="first-col col2">John Brown"</div>,
-      type: "cá nhân",
-      tel: "0571-22098909",
-      lastCall: "12/8/2022",
-      nextCall: "17/8/2022",
-      note: "Đã làm khảo sát",
-      active: [
-        <Space size="middle">
-          <PhoneOutlined
-            style={{
-              fontSize: "12px",
-              padding: "10px",
-              borderRadius: "50%",
-              backgroundColor: "#37B170",
-              color: "white",
-            }}
-          />
-          <CheckSquareOutlined
-            style={{
-              fontSize: "32px",
-              padding: "10px",
-              color: "#ccc",
-            }}
-            id="row-checkbox-2"
-            className=""
-            onClick={() => handleToggleCheckBox(2)}
-          ></CheckSquareOutlined>
-        </Space>,
-      ],
-    },
-    {
-      key: "3",
-      name: <div className="first-col col3">John Brown"</div>,
-      type: "cá nhân",
-      tel: "0571-22098909",
-      lastCall: "12/8/2022",
-      nextCall: "17/8/2022",
-      note: "Đã làm khảo sát",
-      active: [
-        <Space size="middle">
-          <PhoneOutlined
-            style={{
-              fontSize: "12px",
-              padding: "10px",
-              borderRadius: "50%",
-              backgroundColor: "#37B170",
-              color: "white",
-            }}
-          />
-          <CheckSquareOutlined
-            style={{
-              fontSize: "32px",
-              padding: "10px",
-              color: "#ccc",
-            }}
-            id="row-checkbox-3"
-            className=""
-            onClick={() => handleToggleCheckBox(3)}
-          ></CheckSquareOutlined>
-        </Space>,
-      ],
-    },
-    {
-      key: "4",
-      name: <div className="first-col col4">John Brown"</div>,
-      type: "cá nhân",
-      tel: "0571-22098909",
-      lastCall: "12/8/2022",
-      nextCall: "17/8/2022",
-      note: "Đã làm khảo sát",
-      active: [
-        <Space size="middle">
-          <PhoneOutlined
-            style={{
-              fontSize: "12px",
-              padding: "10px",
-              borderRadius: "50%",
-              backgroundColor: "#37B170",
-              color: "white",
-            }}
-          />
-          <CheckSquareOutlined
-            style={{
-              fontSize: "32px",
-              padding: "10px",
-              color: "#ccc",
-            }}
-            id="row-checkbox-4"
-            className=""
-            onClick={() => handleToggleCheckBox(4)}
-          ></CheckSquareOutlined>
-        </Space>,
-      ],
-    },
-    {
-      key: "5",
-      name: <div className="first-col col5">John Brown"</div>,
-      type: "cá nhân",
-      tel: "0571-22098909",
-      lastCall: "12/8/2022",
-      nextCall: "17/8/2022",
-      note: "Đã làm khảo sát",
-      active: [
-        <Space size="middle">
-          <PhoneOutlined
-            style={{
-              fontSize: "12px",
-              padding: "10px",
-              borderRadius: "50%",
-              backgroundColor: "#37B170",
-              color: "white",
-            }}
-          />
-          <CheckSquareOutlined
-            style={{
-              fontSize: "32px",
-              padding: "10px",
-              color: "#ccc",
-            }}
-            id="row-checkbox-5"
-            className=""
-            onClick={() => handleToggleCheckBox(5)}
-          ></CheckSquareOutlined>
-        </Space>,
-      ],
-    },
-    {
-      key: "6",
-      name: <div className="first-col col1">John Brown"</div>,
-      type: "cá nhân",
-      tel: "0571-22098909",
-      lastCall: "12/8/2022",
-      nextCall: "17/8/2022",
-      note: "Đã làm khảo sát",
-      active: [
-        <Space size="middle">
-          <PhoneOutlined
-            style={{
-              fontSize: "12px",
-              padding: "10px",
-              borderRadius: "50%",
-              backgroundColor: "#37B170",
-              color: "white",
-            }}
-          />
-          <CheckSquareOutlined
-            style={{
-              fontSize: "32px",
-              padding: "10px",
-              color: "#ccc",
-            }}
-            id="row-checkbox-6"
-            className=""
-            onClick={() => handleToggleCheckBox(6)}
-          ></CheckSquareOutlined>
-        </Space>,
-      ],
-    },
-    {
-      key: "7",
-      name: <div className="first-col col2">John Brown"</div>,
-      type: "cá nhân",
-      tel: "0571-22098909",
-      lastCall: "12/8/2022",
-      nextCall: "17/8/2022",
-      note: "Đã làm khảo sát",
-      active: [
-        <Space size="middle">
-          <PhoneOutlined
-            style={{
-              fontSize: "12px",
-              padding: "10px",
-              borderRadius: "50%",
-              backgroundColor: "#37B170",
-              color: "white",
-            }}
-          />
-          <CheckSquareOutlined
-            style={{
-              fontSize: "32px",
-              padding: "10px",
-              color: "#ccc",
-            }}
-            id="row-checkbox-7"
-            className=""
-            onClick={() => handleToggleCheckBox(7)}
-          ></CheckSquareOutlined>
-        </Space>,
-      ],
-    },
-    {
-      key: "8",
-      name: <div className="first-col col3">John Brown"</div>,
-      type: "cá nhân",
-      tel: "0571-22098909",
-      lastCall: "12/8/2022",
-      nextCall: "17/8/2022",
-      note: "Đã làm khảo sát",
-      active: [
-        <Space size="middle">
-          <PhoneOutlined
-            style={{
-              fontSize: "12px",
-              padding: "10px",
-              borderRadius: "50%",
-              backgroundColor: "#37B170",
-              color: "white",
-            }}
-          />
-          <CheckSquareOutlined
-            style={{
-              fontSize: "32px",
-              padding: "10px",
-              color: "#ccc",
-            }}
-            id="row-checkbox-8"
-            className=""
-            onClick={() => handleToggleCheckBox(8)}
-          ></CheckSquareOutlined>
-        </Space>,
-      ],
-    },
-  ];
+  const data = dataHistory.map((item,index)=>{ 
+      return {
+        key: index,
+        name: <div className="first-col col1">{item.name}</div>,
+        type: item.type,
+        tel: item.tel,
+        lastCall: item.lastCall,
+        nextCall: item.nextCall,
+        note: item.note,
+        active: [
+          <Space size="middle">
+            <PhoneOutlined
+              style={{
+                fontSize: "12px",
+                padding: "10px",
+                borderRadius: "50%",
+                backgroundColor: "#37B170",
+                color: "white",
+              }}
+            />
+            <CheckSquareOutlined
+              style={{
+                fontSize: "32px",
+                padding: "10px",
+                color: "#ccc",
+              }}
+              id="row-checkbox-1"
+              className=""
+              onClick={() => handleToggleCheckBox(item.id)}
+            ></CheckSquareOutlined>
+          </Space>,
+            ]
+    }
+    });
   return (
     <div className="historyCall_wrap">
       <div className="historyCall_header">

@@ -1,5 +1,5 @@
 import "antd/dist/antd.min.css";
-import Dashboard from "./containers/layouts/DashBoard";
+import Dashboard from "./components/layouts/DashBoard";
 function App() {
   return (
     <div className="App">

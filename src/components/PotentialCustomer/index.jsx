@@ -1,25 +1,17 @@
 import {
-    DownOutlined,
     CaretDownOutlined,
-    UserOutlined,
-    PhoneOutlined,
-    CheckSquareOutlined,
+
   } from "@ant-design/icons";
   import {
     Dropdown,
     Menu,
     Space,
     Typography,
-    message,
     Table,
-    Pagination,
-    Row,
-    Col,
-    Checkbox,
   } from "antd";
   import { Button } from "antd";
   import { useState } from "react";
-  import "./potentialCustomer.css";
+  import "./index.css";
 
 export default function PotentialCustomer() {
 
@@ -132,9 +124,8 @@ export default function PotentialCustomer() {
             })
         })
         
-        for (let i = 0; i<data.length;i++) {
-            
-            data[i].trans_call = [
+        data.map((datas, index) => {
+                datas.trans_call = [
                     <Space size="middle">
                         <Dropdown
                             overlay={menu}
@@ -145,18 +136,46 @@ export default function PotentialCustomer() {
                         >
                             <Button style={{border : 'none',margin: '0',height : '100%',}}>
                                 <i 
-                                    id={`trans_cal_call_${i}`}
+                                    id={`trans_cal_call_${index}`}
                                     style={{fontSize: "25px",padding: "10px 20px",}} 
                                     class="fa-solid fa-phone"
-                                    onClick={() => handleToggleCheckBox(i)}
+                                    onClick={() => handleToggleCheckBox(index)}
                                 >
                                 </i>
                             </Button>
                         </Dropdown>
                     
                     </Space>
-                ]
-        }
+            ]
+        })
+        
+
+        // for (let i = 0; i<data.length;i++) {
+            
+        //     data[i].trans_call = [
+        //             <Space size="middle">
+        //                 <Dropdown
+        //                     overlay={menu}
+        //                     placement="topLeft"
+        //                     arrow={{
+        //                         pointAtCenter: true,
+        //                     }}
+        //                 >
+        //                     <Button style={{border : 'none',margin: '0',height : '100%',}}>
+        //                         <i 
+        //                             id={`trans_cal_call_${i}`}
+        //                             style={{fontSize: "25px",padding: "10px 20px",}} 
+        //                             class="fa-solid fa-phone"
+        //                             onClick={() => handleToggleCheckBox(i)}
+        //                         >
+        //                         </i>
+        //                     </Button>
+        //                 </Dropdown>
+                    
+        //             </Space>
+        //     ]
+
+        // }
     }
 
     tb_potential_customer();

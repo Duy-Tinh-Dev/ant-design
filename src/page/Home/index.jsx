@@ -1,8 +1,8 @@
 import { Row, Col, Space } from "antd";
-import HistoryCall from "../../components/historyCall";
-import CustomerCare from "../../components/customerCare";
-import MissCall from "../../components/missCall";
-import ChartContract from "../../components/chartContract";
+import HistoryCall from "../../components/HistoryCall";
+import CustomerCare from "../../components/CustomerCare";
+import MissCall from "../../components/MissCall";
+import ChartContract from "../../components/ChartContract";
 import PotentialCustomer from "../../components/PotentialCustomer";
 import SignedContract from "../../components/SignedContract";
 

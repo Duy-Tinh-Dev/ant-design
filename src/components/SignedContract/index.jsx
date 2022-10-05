@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import "./signedContract.css";
+import React from 'react';
+import "./index.css";
 import { Column } from '@ant-design/plots';
 
 export default function SignedContract() {

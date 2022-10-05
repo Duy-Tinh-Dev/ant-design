@@ -1,35 +1,22 @@
 import { useState } from "react";
 import {
-  DownOutlined,
   CaretDownOutlined,
-  UserOutlined,
-  PhoneOutlined,
-  CheckSquareOutlined,
   ClockCircleOutlined,
 } from "@ant-design/icons";
 import {
-  Dropdown,
-  Menu,
-  Space,
-  message,
-  Table,
-  Pagination,
-  Row,
-  Col,
-  Checkbox,
   Button,
   Typography,
   List,
   Badge,
 } from "antd";
-import "./missCall.css";
+import "./index.css";
 function MissCall() {
   const { Title } = Typography;
   const [contentDropDown, setContentDropDown] = useState(true);
   const [checkBox, isCheckBox] = useState(false);
   const data = [
     {
-      name: "Jenny Wilson",
+      name: "Jenny Wilson",              
       title: "Tư vấn hợp đồng",
       time: "08:15-08:30",
       date: "12/06/2022",

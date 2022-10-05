@@ -1,28 +1,14 @@
 import { useState } from "react";
 import {
-  DownOutlined,
   CaretDownOutlined,
-  UserOutlined,
-  PhoneOutlined,
-  CheckSquareOutlined,
-  StepForwardOutlined,
 } from "@ant-design/icons";
 import {
-  Dropdown,
-  Menu,
-  Space,
-  message,
-  Table,
-  Pagination,
-  Row,
-  Col,
-  Checkbox,
   Button,
   Typography,
   List,
   Badge,
 } from "antd";
-import "./customerCare.css";
+import "./index.css";
 function CustomerCare() {
   const { Title } = Typography;
   const [contentDropDown, setContentDropDown] = useState(true);
