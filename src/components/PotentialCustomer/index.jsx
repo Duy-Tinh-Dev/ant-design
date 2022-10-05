@@ -48,9 +48,9 @@ export default function PotentialCustomer() {
               key: '1',
               label: (
                 <div>
-                    <p><span style={{fontSize: '20px',color : 'rgb(56 186 116)'}}>78%</span> quỹ dự phòng</p>
-                    <p><span style={{fontSize: '20px',color : 'rgb(186 182 56)'}}>50%</span> quỹ học vấn</p>
-                    <p><span style={{fontSize: '20px',color : 'rgb(186 56 56)'}}>35%</span> quỹ hưu trí</p>
+                    <p><span style={{color : 'rgb(56 186 116)'}}>78%</span> quỹ dự phòng</p>
+                    <p><span style={{color : 'rgb(186 182 56)'}}>50%</span> quỹ học vấn</p>
+                    <p><span style={{color : 'rgb(186 56 56)'}}>35%</span> quỹ hưu trí</p>
                 </div>
               ),
             },

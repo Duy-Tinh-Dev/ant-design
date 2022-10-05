@@ -26,6 +26,14 @@
     flex-direction: row;
 }
 
+.ct_SignedContract .ct_sc_byDate div:first-child{
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-button);
+    border-radius: 14px;
+}
+
 .ct_SignedContract .ct_sc_byDate div{
     margin : 0 10px;
 }

@@ -33,13 +33,13 @@ export default function SignedContract() {
           sales: 230,
         },
     
-      ];
+    ];
     const config = {
-      data,
-      color : `rgb(56 186 116)`,
-      borderRadius : '20px',
-      xField: 'type',
-      yField: 'sales',
+      data,      
+      color : `rgb(56 186 116)`, 
+      borderRadius : '20px', 
+      xField: 'type', 
+      yField: 'sales', 
       columnWidthRatio: 0.8,
       xAxis: {
         label: {
@@ -63,13 +63,7 @@ export default function SignedContract() {
                 Hợp đồng ký được
             </h2>
             <div className="ct_sc_byDate" >
-                <div style={{    
-                    padding: '0 14px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    backgroundColor: 'var(--color-button)',
-                    borderRadius: '14px',
-                    }}>
+                <div>
                     <i style={{color : 'white',fontSize : '30px'}} class="fa-regular fa-calendar-minus"></i>
                 </div>
                 <div>

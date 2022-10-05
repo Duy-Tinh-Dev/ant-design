@@ -132,7 +132,7 @@ function SideBarTest() {
 
   //function component
 
-  function Cpn_sideBar_header() {
+  function SideBarHeader() {
     const defaultCheckedList = [];
     const [checkedList, setCheckedList] = useState(defaultCheckedList);
     const [indeterminate, setIndeterminate] = useState(true);
@@ -157,41 +157,13 @@ function SideBarTest() {
       setVal_scs(value);
     };
 
-    function Cpn_check_box() {
+    function CheckBox() {
       return (
-        // <Checkbox.Group>
-        //   <h3 style={{padding : '5px 0' ,borderBottom : '1px solid rgb(173 173 173)'}}>Nội dung cuộc hẹn</h3>
-        //   {
-        //     data_content_apt.map((e,index) => {
-        //       return (
-        //         <Checkbox
-        //           value={true}
-        //           // defaultChecked={true}
-        //           checked
-        //           // onChange={() => {
-        //           //   console.log(checked.includes(e.id));
-        //           //   handleCheck(e.id)
-        //           // }}
-        //           key={index}
-        //           style={{ display: "flex", margin: "0" ,padding : '10px 0' }}
-        //         >
-        //           {e.name}
-        //         </Checkbox>
-        //       )
-        //     })
-        //   }
-        // </Checkbox.Group>
         <div className="sb_filter">
-          <h3
-            style={{
-              padding: "0 0 10px 0",
-              borderBottom: "1px solid rgb(173 173 173)",
-            }}
-          >
+          <h3>
             Nội dung cuộc hẹn
           </h3>
           <CheckboxGroup
-            style={{ display: "flex", flexDirection: "column" }}
             options={data_content_apt}
             value={checkedList}
             onChange={onChange_filter}
@@ -220,29 +192,15 @@ function SideBarTest() {
         </div>
 
         <div
-          style={{
-            borderRadius: "20px",
-            padding: "0 20px",
-            display: "flex",
-            justifyContent: "center",
-            backgroundColor: "rgb(240 242 245)",
-          }}
+          className="cpn_filter"
         >
           <Popover
-            content={<Cpn_check_box />}
+            content={<CheckBox />}
             trigger="click"
             placement="bottomRight"
           >
             <h3 style={{ margin: "auto 0" }}>
-              <span
-                style={{
-                  color: "white",
-                  margin: "0 10px 0 0",
-                  padding: "5px 10px",
-                  borderRadius: "30px",
-                  backgroundColor: "rgb(246 208 75)",
-                }}
-              >
+              <span>
                 1
               </span>
               Bộ lọc
@@ -257,18 +215,17 @@ function SideBarTest() {
     );
   }
 
-  function Cpn_sb_cal_week() {
+  function SbCalWeek() {
     return (
       <div className="sb_cal_week">
         <Segmented
-          style={{ width: "100%", padding: "10px", borderRadius: "20px" }}
           options={["Thứ 2", "Thứ3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "CN"]}
         />
       </div>
     );
   }
 
-  function Cpn_sb_content() {
+  function SbContent() {
     return (
       <div className="sb_content">
         <Row>
@@ -276,20 +233,13 @@ function SideBarTest() {
             return (
               <div
                 className="sb_cal_row"
-                style={{
-                  borderRadius: "30px",
-                  width: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  backgroundColor: "white",
-                  margin: "20px 0",
-                }}
               >
                 <div
                   className="sb_intro"
-                  style={{ padding: "0 20px", width: "100%" }}
                 >
-                  <div style={{ display: "flex", alignItems: "center" }}>
+                  <div
+                    className="sb_intro_mid"
+                  >
                     <i
                       class="fa-solid fa-building sb_i_company"
                       style={{ fontSize: "20px", margin: "0 20px 0 0" }}
@@ -299,7 +249,7 @@ function SideBarTest() {
                       <p>{tmp.content}</p>
                     </div>
                   </div>
-                  <div style={{ display: "flex", alignItems: "center" }}>
+                  <div>
                     <i
                       style={{ fontSize: "25px" }}
                       class="fa-regular fa-square-check"
@@ -347,9 +297,9 @@ function SideBarTest() {
 
   return (
     <div className="sb">
-      <Cpn_sideBar_header />
-      <Cpn_sb_cal_week />
-      <Cpn_sb_content />
+      <SideBarHeader />
+      <SbCalWeek />
+      <SbContent />
     </div>
   );
 }

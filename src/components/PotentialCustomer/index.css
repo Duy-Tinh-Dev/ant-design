@@ -94,8 +94,10 @@ background-color: black;
 } */
 
 
+.ant-dropdown-menu-title-content p span {
+  font-size: 20px;
 
-
+}
 
 
 
